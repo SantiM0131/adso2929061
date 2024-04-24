@@ -6,6 +6,6 @@
 
 ---
 
-![hollow knight](https://tinyurl.com/ye7fc7zn)
+![hollow knight](https://tinyurl.com/tf636j9t)
 
 [ingresar al drive](https://tinyurl.com/277rvvec)
