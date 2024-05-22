@@ -1,4 +1,8 @@
 /*------------*/
+/*fonts*/
+/*------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*------------*/
 /*reset*/
 /*------------*/
 *, *::before, *::after{
@@ -61,7 +65,7 @@ body, html{
 /*------------*/
 :root {
     --color1: #0009;
-    --color2: #fff9;
+    --color2: rgba(218, 193, 193, 0.6);
     --font-fm: Poppins, sans-serif;
 }
 /*------------*/
@@ -97,9 +101,47 @@ body {
                 padding: 8px 20px;
             }
             img {
-                border-radius: 50%;
-                border: 10px solid var(--color-1);
-                width: 240px;
+                border-radius: 100px;
+                object-fit: cover;
+                border: 10px solid var(--color-2);
+                width: 200px;
+            }
+        }
+        menu {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-top: 2rem;
+            a:is(:link, :visited) {
+                align-items: center;
+                background: white;
+                border-radius: 4px;
+                color: var(--color-1);
+                display: flex;
+                justify-content: start;
+                text-decoration: none;
+                gap: 0.6rem;
+                transition: all 0.4s ease-in;
+                width: 280px;
+                span {
+                    border-radius: 4px 0 0 4px;
+                    background-color: orange;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    color: var(--color-2);
+                    transition: all 0.4s ease-in;
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            a:is(:hover) {
+                background-color: rgb(236, 186, 236);
+            }
+            a:is(:hover) span {
+                width: 60px;
             }
         }
     }
