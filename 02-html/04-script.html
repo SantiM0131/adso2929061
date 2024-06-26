@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01- Document html 5</title>
+    <title>04- Script (JS)</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="html">
@@ -14,15 +14,21 @@
     </nav>
     <main>
         <header>
-            <h1>01- Doc html 5 </h1>
-            <h2>Basic structure of document HTML 5</h2>
+            <h1>04- Script (JS) </h1>
+            <h2>This tag allows you to insert code in javascript.</h2>
         </header>
         <section>
-            <h3>This is a Title:</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus animi, a repellendus veritatis minus labore eum! Dolorem repellendus, quo dolor voluptatum similique asperiores, velit quod unde, mollitia perferendis architecto minima?
-            </p>
+            <h3>Welcome: <small class="user"></small></h3>
         </section>
     </main>
+    <script>
+        const user = document.querySelector('.user')
+        const name = prompt("What's your name ?")
+        if (name) {
+            user.textContent = '😎 ' + name
+        } else {
+            user.textContent = '😟 Guest'
+        }
+    </script>
 </body>
 </html>
