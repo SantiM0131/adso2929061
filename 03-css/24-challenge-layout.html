@@ -57,6 +57,15 @@
         display: flex;
         padding: 5px 5px 10px 5px;
         background-color: #0009;
+        .spam1:is(:hover) .spam2{
+            background-color: #fff9;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease-in;
+        }
         .spam1 {
             background: url(../images/spriteweb.png);
             background-position: 300px -15px;
@@ -73,16 +82,56 @@
             display: flex;
             transition: all 0.5s ease-in;
         }
-        .spam2:is(:hover) {
-            background-color: #fff9;
+        
+      }
+     
+      section.first {
+            background-color: rgba(0, 0, 0, 0.4);
+            margin: 0 auto;
+            width: 814px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        div.info {
+            background-color: white;
+            display: flex;
+            gap: 35px;
             justify-content: center;
             align-items: center;
-            height: 50px;
-            text-align: center;
-            display: flex;
-            transition: all 0.5s ease-in;
+            height: 200px;
+            margin-bottom: 10px 0;
         }
-      }
+
+        div aside {
+            background: url(../images/Spriteweb.png) no-repeat;
+            width: 20%;
+        }
+
+        div p {
+            width: 60%;
+            text-align: justify;
+            line-height: 1.5em;
+        }
+
+        div p:hover {
+            color: #17a053;
+        }
+
+        div aside.first {
+            background-position: -282px -499px;
+            height: 95px;
+            width: 109px;
+        }
+
+        div aside.second {
+            background-position: -88px -210px;
+            height: 173px;
+            width: 109px;
+        }
       footer {
         display: flex;
         flex-direction: column;
@@ -117,9 +166,10 @@
         width: 120px;
       }
       footer menu a:is(:hover) {
-        background-color: #0009;
-        border-bottom: 4px solid #ff0;
+        background-color: #fff;
+        border-bottom: 4px solid rgb(2, 111, 2);
       }
+
     </style>
 </head>
 <body>
@@ -147,6 +197,28 @@
                 </spam>
             </div>
         </section>
+        <section class="first">
+          <div class="info">
+              <aside class="first"></aside>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugit aliquam impedit magnam quod, maxime deserunt cupiditate ratione ea saepe odit quasi culpa quam dolor voluptatibus reprehenderit quis a iusto corrupti hic placeat dolores aut! Dolorum ipsam architecto tempora blanditiis, accusantium pariatur omnis sunt enim error dolor quas, consequatur cupiditate eius necessitatibus, quidem corrupti officiis reprehenderit voluptate perspiciatis magni nostrum!
+              </p>
+              <aside class="second"></aside>
+          </div>
+          <div class="info">
+              <aside class="first"></aside>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugit aliquam impedit magnam quod, maxime deserunt cupiditate ratione ea saepe odit quasi culpa quam dolor voluptatibus reprehenderit quis a iusto corrupti hic placeat dolores aut! Dolorum ipsam architecto tempora blanditiis, accusantium pariatur omnis sunt enim error dolor quas, consequatur cupiditate eius necessitatibus, quidem corrupti officiis reprehenderit voluptate perspiciatis magni nostrum!
+              </p>
+              <aside class="second"></aside>
+          </div>
+          <div class="info">
+              <aside class="first"></aside>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fugit aliquam impedit magnam quod, maxime deserunt cupiditate ratione ea saepe odit quasi culpa quam dolor voluptatibus reprehenderit quis a iusto corrupti hic placeat dolores aut! Dolorum ipsam architecto tempora blanditiis, accusantium pariatur omnis sunt enim error dolor quas, consequatur cupiditate eius necessitatibus, quidem corrupti officiis reprehenderit voluptate perspiciatis magni nostrum!
+              </p>
+              <aside class="second"></aside>
+          </div>
+      </section>
         <footer>
             <figure class="logo"> </figure>
             <menu>
