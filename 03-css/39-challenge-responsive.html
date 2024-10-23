@@ -20,6 +20,7 @@ header {
         align-items: center;
         justify-content: center;
       }
+    
       header figure.logo {
         background: url(../images/logoserie.png) no-repeat;
         background-size: cover;
@@ -38,6 +39,113 @@ main {
   padding: 1rem;
 }
 
+.images {
+        display: flex;
+        background-color: #0009;
+        .vikin1:is(:hover) .viki2 {
+            background-color: #fff9;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            display: flex;
+            height: 50px;
+            transition: all 0.5s ease-in;
+        }
+        .vikin2:is(:hover) .viki2 {
+            background-color: #fff9;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            display: flex;
+            height: 50px;
+            transition: all 0.5s ease-in;
+          }
+          .vikin3:is(:hover) .viki2 {
+            background-color: #fff9;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            display: flex;
+            height: 50px;
+            transition: all 0.5s ease-in;
+          }
+          .vikin4:is(:hover) .viki2 {
+            background-color: #fff9;
+            justify-content: center;
+            align-items: end;
+            text-align: center;
+            display: flex;
+            height: 50px;
+            transition: all 0.5s ease-in;
+          }
+          
+        .vikin1 {
+            background: url(../images/bjornseason1.png) no-repeat;
+            height: 200px;
+            background-color: #fff5;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease-in;
+            position: relative;
+            .viki2{
+              position: absolute;
+              bottom: 0px;
+              width: 100%;
+            }
+        }
+        .vikin2 {
+          background: url(../images/bjornseason2.png) no-repeat;
+            height: 200px;
+            width: 200px;
+            background-color: #fff5;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease-in;
+            position: relative;
+            .viki2{
+              position: absolute;
+              bottom: 0px;
+              width: 100%;
+            }
+        }
+        .vikin3 {
+          background: url(../images/bjornseason3.png) no-repeat;
+            height: 200px;
+            width: 200px;
+            background-color: #fff5;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease-in;
+            position: relative;
+            .viki2{
+              position: absolute;
+              bottom: 0px;
+              width: 100%;
+            }
+        }
+        .vikin4 {
+          background: url(../images/bjornseason4.png) no-repeat;
+            height: 200px;
+            background-color: #fff5;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease-in;
+            position: relative;
+            .viki2{
+              position: absolute;
+              bottom: 0px;
+              width: 100%;
+            }
+        }
+        }
 
 main div {
   background: #0009;
@@ -86,18 +194,18 @@ article {
     <header>
         <figure class="logo"></figure>
     </header>
-    <main>
-        <div>
-            <img src="../images/bjorn season 1.png" alt="bjorn1">
+    <main class="images">
+        <div class="vikin1">
+            <spam class="viki2">bjorn S1</spam>
         </div>
-        <div>
-            <img src="../images/bjorn season 2.png" alt="bjorn2">
+        <div class="vikin2">
+            <spam class="viki2">blorn S2</spam>
         </div>
-        <div>
-            <img src="../images/bjorn season 3.png" alt="bjorn3">
+        <div class="vikin3">
+            <spam class="viki2">bjorn S3</spam>
         </div>
-        <div>
-            <img src="../images/bjorn season 4.png" alt="bjorn4">
+        <div class="vikin4">
+            <spam class="viki2">bkorn S4</spam>
         </div>
     </main>    
     <article>
@@ -105,7 +213,7 @@ article {
             <img src="../images/king bjorn.png" alt="kbjorn">
           </div>
           <div class="txt">
-            <h2>Zelda Echoes of Wisdom</h2>
+            <h2>King Bjorn Ironside</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit sint, corporis ad accusamus delectus officiis vel placeat ratione esse, error minus rerum. Culpa asperiores consequuntur est tempora minima aperiam.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit sint, corporis ad accusamus delectus officiis vel placeat ratione esse, error minus rerum. Culpa asperiores consequuntur est tempora minima aperiam.</p>
           </div>
