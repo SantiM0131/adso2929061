@@ -15,3 +15,6 @@ html(lang="en")
                 h1 17-challenge
                 p Lorem
             section
+                ul
+                    each val, index in ['#08fafa', '#17c8fa', '#3296fa', '#4b64fa', '#6333fa', '#7d01fa', '#9601fa', '#af01fa', '#c801fa', '#e101f9']
+                        div(style='list-style: none margin-bottom: 4px; height: 60px; width: 400px; padding: 12px; color: black; background-color: ' +val)= index 
