@@ -3,230 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39- Challenge Responsive</title>
+    <title>Vikingos</title>
     <style>
-        * {
-  transition: all 0.2s ease-in;
-}
-body {
-  background: url(../images/fondoserie.png) no-repeat;
-  background-size: cover;
-  font-family: sans-serif;
-}
-
-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    
-      header figure.logo {
-        background: url(../images/logoserie.png) no-repeat;
+        body {
+        border: 10px solid ;
+        background-repeat: no-repeat;
         background-size: cover;
-        height: 300px;
-        width: 742px;
-      }
-main {
-  background: radial-gradient(circle, #e3585848, #ea10105a);
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 850px;
-  margin: 2rem auto;
-  padding: 1rem;
+        background-size: cover;
+        font-family: sans-serif;
+        margin: 0;
+        background: rgb(71, 18, 18);
+        background-size: cover;
+    }
+
+section.images {
+    margin: 0 100px 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .images {
+    justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            
+
+            div.two{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+    div.sprites:is(:hover) .spam2 {
+        background-color: rgba(252, 250, 250, 0.975);
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        text-align: center;
         display: flex;
-        background-color: #0009;
-        .vikin1:is(:hover) .viki2 {
-            background-color: #fff9;
-            justify-content: center;
-            align-items: end;
-            text-align: center;
-            display: flex;
-            height: 50px;
-            transition: all 0.5s ease-in;
-        }
-        .vikin2:is(:hover) .viki2 {
-            background-color: #fff9;
-            justify-content: center;
-            align-items: end;
-            text-align: center;
-            display: flex;
-            height: 50px;
-            transition: all 0.5s ease-in;
-          }
-          .vikin3:is(:hover) .viki2 {
-            background-color: #fff9;
-            justify-content: center;
-            align-items: end;
-            text-align: center;
-            display: flex;
-            height: 50px;
-            transition: all 0.5s ease-in;
-          }
-          .vikin4:is(:hover) .viki2 {
-            background-color: #fff9;
-            justify-content: center;
-            align-items: end;
-            text-align: center;
-            display: flex;
-            height: 50px;
-            transition: all 0.5s ease-in;
-          }
+        transition: all 0.5s ease-in;
+    }
+
+    div.bj1 {
+        background: url(../images/bjornseason1.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: #000     4px solid;
+        position: relative;
+    }
+
+    div.bj2 {
+        background: url(../images/bjornseason2.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: #000 4px solid;
+        position: relative;
+    }
+
+    div.bj3 {
+        background: url(../images/bjornseason3.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: #000 4px solid;
+        position: relative;
+    }
+
+    div.bj4 {
+        background: url(../images/bjornseason4.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: #000 4px solid;
+        position: relative;
+    }
+
+    figcaption {
+        background-color: rgba(31, 30, 30, 0.333);
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        transition: all 0.5s ease-in;
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+    }
+}
+
+div.logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 228px;
+    }
+}
+
+header menu {
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+div.all {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      div.text {
+        display: flex;
+        flex-direction: row;
+        background-color: #d17e7e93;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        div.ci {
+          display: flex;
+          flex-direction: column;
+          width: 450px;
           
-        .vikin1 {
-            background: url(../images/bjornseason1.png) no-repeat;
-            height: 200px;
-            background-color: #fff5;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            transition: all 0.5s ease-in;
-            position: relative;
-            .viki2{
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-            }
-        }
-        .vikin2 {
-          background: url(../images/bjornseason2.png) no-repeat;
-            height: 200px;
-            width: 200px;
-            background-color: #fff5;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            transition: all 0.5s ease-in;
-            position: relative;
-            .viki2{
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-            }
-        }
-        .vikin3 {
-          background: url(../images/bjornseason3.png) no-repeat;
-            height: 200px;
-            width: 200px;
-            background-color: #fff5;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            transition: all 0.5s ease-in;
-            position: relative;
-            .viki2{
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-            }
-        }
-        .vikin4 {
-          background: url(../images/bjornseason4.png) no-repeat;
-            height: 200px;
-            background-color: #fff5;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            transition: all 0.5s ease-in;
-            position: relative;
-            .viki2{
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-            }
-        }
+          align-items: center;
         }
 
-main div {
-  background: #0009;
-  height: 200px;
-  width: 200px;
-}
+        img {
+          width: 314px;
 
-main div img {
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-}
 
-article {
-  background: radial-gradient(circle, #cb9e9e38, #ea4a4a83);
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  width: 850px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
+        }
 
-@media (max-width: 860px) {
-  main {
-    width: 500px;
-  }
-  article {
-    width: 500px;
-  }
-}
 
-@media (max-width: 480px) {
-  main {
-    width: 400px;
-  }
-  article {
-    flex-direction: column;
-    width: 400px;
-  }
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      div.ci {
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      div.all {
+        div.text {
+          padding-left: 30px;
+          padding-right: 30px;
+          img {
+            width: 250px;
+
+          }
+        }
+
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      div.ci {
+        width: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+      }
+
+      div.all {
+        div.text {
+          padding-left: 30px;
+          padding-right: 30px;
+          img {
+            width: 150px;
+          }
+        }
+    }
 }
-    </style>
+</style>
 </head>
+
 <body>
-    <header>
-        <figure class="logo"></figure>
-    </header>
-    <main class="images">
-        <div class="vikin1">
-            <spam class="viki2">bjorn S1</spam>
+<main>
+<div class="logo"><img src="../images/logoserie.png" alt="Vikingos"></div>
+<section class="images">
+    <div class="images">
+        <div class="bj1">
+            <figcaption>Season 01</figcaption>
         </div>
-        <div class="vikin2">
-            <spam class="viki2">blorn S2</spam>
+        <div class="bj2">
+            <figcaption>Season 02</figcaption>
         </div>
-        <div class="vikin3">
-            <spam class="viki2">bjorn S3</spam>
+        <div class="bj3">
+            <figcaption>Season 03</figcaption>
         </div>
-        <div class="vikin4">
-            <spam class="viki2">bjorn S4</spam>
+        <div class="bj4">
+            <figcaption>Season 03</figcaption>
         </div>
-    </main>    
-    <article>
-        <div class="img">
-            <img src="../images/king bjorn.png" alt="kbjorn">
-          </div>
-          <div class="txt">
-            <h2>King Bjorn Ironside</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit sint, corporis ad accusamus delectus officiis vel placeat ratione esse, error minus rerum. Culpa asperiores consequuntur est tempora minima aperiam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit sint, corporis ad accusamus delectus officiis vel placeat ratione esse, error minus rerum. Culpa asperiores consequuntur est tempora minima aperiam.</p>
-          </div>
-    </article>
-    <article>
-        <div class="img">
-            <img src="../images/dead bjorn.png" alt="bjorndd">
-        </div>
-        <div class="txt">
-            <h2>Dead of King Bjorn Season 6</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam labore et nesciunt aliquam eius distinctio perferendis, quibusdam officiis sapiente necessitatibus molestiae commodi corporis ea quia cumque quasi quam mollitia.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure atque labore illum assumenda sint nesciunt odit consequatur voluptatibus totam at animi voluptates ab repellendus aliquam, voluptatem qui laborum dolor placeat!</p>
-        </div>
-    </article>
+    </div>
+</section>
+<br />
+<div class="all">
+    <div class="seccion">
+
+    </div>
+    <div class="text">
+      <img src="../images/fondoserie.png" alt="">
+      <div>
+        <h3>VIKINGOS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, neque? Minima a, cumque officia
+          exercitationem quos animi recusandae at itaque rerum. Aliquid obcaecati exercitationem quibusdam eum
+          dolorum blanditiis architecto facilis.</p>
+      </div>
+    </div>
+    <div class="text">
+      <img src="../images/king bjorn.png" alt="">
+      <div>
+        <h3>King bjorn</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, tempore corrupti quisquam eaque saepe
+          eum error, dicta recusandae voluptate ea non accusantium repellendus quo deleniti ipsum vitae ipsam
+          praesentium nesciunt?</p>
+      </div>
+    </div>
+    <div class="text">
+        <img src="../images/dead bjorn.png" alt="">
+        <div>
+          <h3>Dead of bjorn</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, tempore corrupti quisquam eaque saepe
+            eum error, dicta recusandae voluptate ea non accusantium repellendus quo deleniti ipsum vitae ipsam
+            praesentium nesciunt?</p>
+     </div>
+    </div>
+  </div>
+</main>
+
 </body>
+
 </html>
