@@ -1,0 +1,24 @@
+
+nav.navbar.bg-custom {
+    background-color: #790808;
+    a.navbar-brand,
+    a.nav-link {
+        color: #000000;
+    }
+}
+/* Hero Section */
+div.row.hero {
+    padding-top: 86px;
+    div.col:nth-child(1) {
+        background-color: #C96F6F;
+        height: 680px;
+        a.btn.bg-custom {
+            background-color: #AC2525;
+        }
+    }
+    div.col:nth-child(2) {
+        background: #FED7D7 url(../06-challenge/images/hero-picture.png) no-repeat center bottom;
+        background-size: 480px;
+        height: 680px;
+    }
+}
