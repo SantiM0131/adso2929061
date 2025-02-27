@@ -22,3 +22,25 @@ div.row.hero {
         height: 680px;
     }
 }
+
+/* Hero About */
+div.row.About {
+    padding-top: 0px;
+    div.col:nth-child(2) {
+        background-color: #fff;
+        height: 680px;
+        a.btn.bg-custom {
+            background-color: #fff;
+        }
+        .progress-bar.bg-custom {
+            background-color: #790808;
+        }
+    }
+    div.col:nth-child(1) {
+        background: url(../06-challenge/images/hero-picture.png) no-repeat center bottom;
+        background-size: 480px;
+        height: 680px;
+    }
+}
+
+
